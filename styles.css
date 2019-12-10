@@ -121,6 +121,15 @@ p{
   {
     visibility: visible;
   }
+  .recommended
+  {
+    text-align: left;
+  }
+  .location{
+    text-align: left;
+  }
+}
+
 }
 
 @media only screen and (max-width: 382px) {
@@ -129,12 +138,26 @@ p{
   {
     visibility: hidden;
   }
+  .recommended
+  {
+    text-align: left;
+  }
+  .location{
+    text-align: left;
+  }
 }
 @media only screen and (max-width: 330px) {
 
   .eye,.views,.share
   {
     visibility: hidden;
+  }
+  .recommended
+  {
+    text-align: left;
+  }
+  .location{
+    text-align: left;
   }
 }
 
@@ -179,9 +202,9 @@ padding: 0;
 {
   text-align: center;
 }
-.groups{
+/* .groups{
   padding: 15%;
-}
+} */
 .move2
 {
   position: relative;
