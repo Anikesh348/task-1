@@ -2,23 +2,23 @@
   margin: auto;
   //width: 300px;
 }
-.middle-section
-{
-   padding: 2% 12%;
-   background-color: #fff;
+
+.middle-section {
+  padding: 2% 12%;
+  background-color: #fff;
 }
 
 button.navbar-toggler.navbar-toggler-right {
   border-color: yellow;
 }
 
-h2
-{
-  font-family: 'Montserrat',sans-serif;
+h2 {
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 3rem;
 }
-p{
+
+p {
   font-size: 1.2rem;
 }
 
@@ -38,131 +38,145 @@ p{
 
 #title {
   //background: url("images/image2.png") center center cover no-repeat fixed;
-  background-image: url('images/image2.png');
-   background-repeat: no-repeat;
+  background-image: url('images/image2.jpg');
+  background-repeat: no-repeat;
   //background-size: contain;
   background-position: center center;
-
 }
 
-
-
-h6,p,h4
-{
-  font-family: "Montserrat",sans-serif;
+h6, p, h4 {
+  font-family: "Montserrat", sans-serif;
   font-weight: lighter;
   font-size: 0.8rem;
 }
-h4
-{
+
+h4 {
   font-size: 1.5rem;
   font-weight: bold;
 }
-p{
+
+p {
   font-size: 1.2rem;
   font-weight: normal;
 }
-.n{
+
+.n {
   margin: 2%;
 }
-.n1
-{
+
+.n1 {
   margin: 0.5%;
 }
-.container-fluid
-{
+
+.container-fluid {
   padding: 7% 15%;
   text-align: center;
 }
-.social-icon
-{
+
+.social-icon {
   margin: 2%;
 }
-.cards
-{
+
+.cards {
   padding: 1%;
 }
+
+.navbar2 {
+  visibility: collapse;
+}
+
 @media only screen and (max-width: 1220px) {
-  .eye
-  {
-
+  .eye {
     visibility: hidden;
-
   }
-  /* .views
-  {
-    visibility: hidden;
-
-  }
-  .share
-  {
-    visibility: hidden;
-
-  } */
 }
+
 @media only screen and (max-width: 1064px) {
-
-  .views
-  {
-    visibility: hidden;
-  }
-  .eye
-  {
+  .views {
     visibility: hidden;
   }
 }
+
 @media only screen and (max-width: 990px) {
+  .navbar2 {
+    visibility: visible;
+  }
 
-  .views
-  {
+  .views {
     visibility: visible;
   }
-  .eye
-  {
+
+  .eye {
     visibility: visible;
   }
-  .recommended
-  {
+
+  .recommended {
     text-align: left;
   }
-  .location{
+
+  .location {
     text-align: left;
+  }
+
+  .card2 {
+    display: none;
   }
 }
 
-}
-
-@media only screen and (max-width: 382px) {
-
-  .eye
-  {
+@media only screen and (max-width: 390px) {
+  .eye {
     visibility: hidden;
   }
-  .recommended
-  {
+
+  .recommended {
     text-align: left;
   }
-  .location{
+
+  .location {
     text-align: left;
+  }
+
+  .move1 {
+    left: 50px;
+  }
+
+  .move2 {
+    left: 150px;
   }
 }
+
 @media only screen and (max-width: 330px) {
 
-  .eye,.views,.share
-  {
+  /* .views {
+    visibility: hidden;
+  } */
+  .views {
     visibility: hidden;
   }
-  .recommended
-  {
+
+  .eye {
+    visibility: hidden;
+  }
+
+  .recommended {
     text-align: left;
   }
-  .location{
+
+  .location {
     text-align: left;
+  }
+
+  .move1 {
+    left: 0px;
+  }
+
+  .move2 {
+    left: 100px;
   }
 }
 
-.card-image
-{ position: absolute;
+.card-image {
+  position: absolute;
   border-radius: 100%;
   width: 50px;
   height: 50px;
@@ -170,16 +184,16 @@ p{
   margin: 0;
   padding: 0;
 }
-.move
-{
+
+.move {
   position: absolute;
-bottom: 8px;
-margin: 0;
-left: 70px;
-padding: 0;
+  bottom: 8px;
+  margin: 0;
+  left: 70px;
+  padding: 0;
 }
-.card-image1
-{
+
+.card-image1 {
   position: relative;
   //  left: 0px;
   border: 30px;
@@ -187,46 +201,38 @@ padding: 0;
   height: 50px;
   border-radius: 100%;
 }
-.move1
-{
+
+.move1 {
   position: relative;
   left: 100px;
   bottom: 30px;
 }
-.recommended
-{
+
+.recommended {
   text-align: center;
   margin-top: 50px;
 }
-.location
-{
+
+.location {
   text-align: center;
 }
-/* .groups{
-  padding: 15%;
-} */
-.move2
-{
+
+.move2 {
   position: relative;
   left: 200px;
   bottom: 63px;
   border-radius: 30%;
 }
-.cardspecial
-{
-  border: none;
-}
-.dots
-{
+
+.dots {
   transform: rotate(90deg);
   float: right;
   position: relative;
   bottom: 35px;
   color: grey;
 }
-.eye
-{
 
+.eye {
   position: absolute;
   right: 100px;
   bottom: 8px;
@@ -234,55 +240,58 @@ padding: 0;
   padding: 0;
   color: grey;
 }
-.share
-{
 
+.share {
   position: absolute;
   right: 10px;
   bottom: 8px;
   margin: 0;
   padding: 0;
   color: grey;
-
 }
 
-.big{
+.big {
   position: relative;
 }
 
-.views
-{
+.views {
   font-size: 0.6rem;
-
   position: absolute;
-right: 30px;
-bottom: 8px;
+  right: 30px;
+  bottom: 8px;
   padding: 0;
   margin: 0;
   color: grey;
 }
-.views1
-{
 
+.views1 {
   font-size: 0.6rem;
   color: grey;
 }
- .card1
-{
-  position: relative;
-}
- .card2
-{
 
+.card1 {
+  position: relative;
+  margin-bottom: 1%;
+}
+
+.card2 {
   border: none;
-
+  margin-bottom: 1%;
 }
- .card3
-{
+
+.card3 {
   position: relative;
-
+  margin-bottom: 1%;
 }
 
+.card4 {
+  margin-bottom: 1%;
+}
+
+/* .navbar2
+{
+  visibility: collapse;
+} */
 /* @media (max-width: 1028px) {
 
   .card3
@@ -294,7 +303,6 @@ bottom: 8px;
     text-align: center;
   }
 }  */
-
 /* .cards
 {
   margin: 0.5%;
