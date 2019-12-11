@@ -1,47 +1,7 @@
-.search {
-  margin: auto;
-  //width: 300px;
-}
-
-.middle-section {
-  padding: 2% 12%;
-  background-color: #fff;
-}
-
-button.navbar-toggler.navbar-toggler-right {
-  border-color: yellow;
-}
-
-h2 {
+h3 {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 3rem;
-}
-
-p {
-  font-size: 1.2rem;
-}
-
-.image1 {
-  height: 35px;
-}
-
-.container-fluid {
-  margin-top: 20px;
-  padding: 5% 10%;
-}
-
-.detail {
-  margin-top: 150px;
-  color: #fff;
-}
-
-#title {
-  //background: url("images/image2.png") center center cover no-repeat fixed;
-  background-image: url('images/image2.jpg');
-  background-repeat: no-repeat;
-  //background-size: contain;
-  background-position: center center;
 }
 
 h6, p, h4 {
@@ -58,6 +18,28 @@ h4 {
 p {
   font-size: 1.2rem;
   font-weight: normal;
+}
+
+.search {
+  margin: auto;
+}
+
+.middle-section {
+  padding: 2% 12%;
+  background-color: #fff;
+}
+
+.p {
+  font-size: 1.2rem;
+}
+
+.image1 {
+  height: 35px;
+}
+
+.container-fluid {
+  margin-top: 20px;
+  padding: 5% 10%;
 }
 
 .n {
@@ -85,94 +67,8 @@ p {
   visibility: collapse;
 }
 
-@media only screen and (max-width: 1220px) {
-  .eye {
-    visibility: hidden;
-  }
-}
-
-@media only screen and (max-width: 1064px) {
-  .views {
-    visibility: hidden;
-  }
-}
-
-@media only screen and (max-width: 990px) {
-  .navbar2 {
-    visibility: visible;
-  }
-
-  .views {
-    visibility: visible;
-  }
-
-  .eye {
-    visibility: visible;
-  }
-
-  .recommended {
-    text-align: left;
-  }
-
-  .location {
-    text-align: left;
-  }
-
-  .card2 {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 390px) {
-  .eye {
-    visibility: hidden;
-  }
-
-  .recommended {
-    text-align: left;
-  }
-
-  .location {
-    text-align: left;
-  }
-
-  .move1 {
-    left: 50px;
-  }
-
-  .move2 {
-    left: 150px;
-  }
-}
-
-@media only screen and (max-width: 330px) {
-
-  /* .views {
-    visibility: hidden;
-  } */
-  .views {
-    visibility: hidden;
-  }
-
-  .eye {
-    visibility: hidden;
-  }
-
-  .recommended {
-    text-align: left;
-  }
-
-  .location {
-    text-align: left;
-  }
-
-  .move1 {
-    left: 0px;
-  }
-
-  .move2 {
-    left: 100px;
-  }
+.man {
+  margin-left: 5%;
 }
 
 .card-image {
@@ -288,22 +184,88 @@ p {
   margin-bottom: 1%;
 }
 
-/* .navbar2
-{
-  visibility: collapse;
-} */
-/* @media (max-width: 1028px) {
+@media only screen and (max-width: 1220px) {
+  .eye {
+    visibility: hidden;
+  }
+}
 
-  .card3
-  {
-    width: 24rem;
+@media only screen and (max-width: 1064px) {
+  .views {
+    visibility: hidden;
   }
-  .cardd
-  {
-    text-align: center;
+}
+
+@media only screen and (max-width: 990px) {
+  .navbar2 {
+    visibility: visible;
   }
-}  */
-/* .cards
-{
-  margin: 0.5%;
+
+  .views {
+    visibility: visible;
+  }
+
+  .eye {
+    visibility: visible;
+  }
+
+  .recommended {
+    text-align: left;
+  }
+
+  .location {
+    text-align: left;
+  }
+
+  .card2 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .eye {
+    visibility: hidden;
+  }
+
+  .recommended {
+    text-align: left;
+  }
+
+  .location {
+    text-align: left;
+  }
+
+  .move1 {
+    left: 50px;
+  }
+
+  .move2 {
+    left: 150px;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .views {
+    visibility: hidden;
+  }
+
+  .eye {
+    visibility: hidden;
+  }
+
+  .recommended {
+    text-align: left;
+  }
+
+  .location {
+    text-align: left;
+  }
+
+  .move1 {
+    left: 0px;
+  }
+
+  .move2 {
+    left: 100px;
+  }
 }
