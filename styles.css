@@ -306,3 +306,47 @@ p {
     font-size: 0.5rem;
   }
 }
+.active,.active1
+{
+  visibility: collapse;
+}
+ .modal-bodies{
+  margin: 50px auto;
+
+}
+.no,.price{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.remove,.add{
+  float: right;
+}
+.cardp
+{
+  margin: 2%;
+}
+.paid,.free{
+  margin: 0 40px;
+}
+.single,.multiple{
+  margin: 0 10px;
+}
+.m{
+  margin-left: 10px;
+
+}
+.modal2
+{
+  margin: 30px 15px;
+}
+.h4
+{
+  margin: 3% 1%;;
+}
+.space{
+  padding: 4%;
+}
+.payment{
+  text-align: center;
+  margin: 5% auto;
+}
