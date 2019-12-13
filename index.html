@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Figma</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
 
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -313,14 +315,14 @@
 
 
   <section class="payment-section">
-   <div class="payment">
+    <div class="payment">
 
 
-    <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModalCenter">
-      Payments 💰💰
-    </button>
+      <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModalCenter">
+        Payments 💰💰
+      </button>
 
-</div>
+    </div>
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
@@ -340,7 +342,7 @@
             </button>
 
 
-            <button class="free btn btn-secondary" type="button" name="button">
+            <button class="free btn btn-danger" type="button" name="button">
               <div class="custom-control custom-radio custom-control-inline">
                 <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
                 <label class="custom-control-label" for="customRadioInline1">Free 💵</label>
@@ -351,8 +353,30 @@
 
           <div class="modal-footer">
 
-            <button type="button" class=" nonactive btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter1" data-dismiss="modal" disabled>Next</button>
-            <button type="button" class=" active btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter1" data-dismiss="modal">Next</button>
+            <button type="button" class=" nonactive2 btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter1" data-dismiss="modal" disabled>Next</button>
+            <button type="button" class=" active2 btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter1" data-dismiss="modal">Next</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="exampleModalCenter4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleModalCenter" name="button" data-dismiss="modal"><i class="fas fa-long-arrow-alt-left"></i></button>
+            <h5 class="modal-title m" id="exampleModalCenterTitle">Free Event</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body modal-bodies">
+
+            <h3 class="stylish">You may Continue for free!!</h3>
+
+          </div>
+          <div class="modal-footer">
+            <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+            <button type="button" class="  btn btn-outline-success" data-dismiss="modal">Done 👌</button>
           </div>
         </div>
       </div>
@@ -368,16 +392,17 @@
             </button>
           </div>
           <div class="modal-body modal-bodies">
-            <button class="single btn btn-secondary" type="button" name="button">
+            <h6>Single cost or Multiple cost event? 🛈</h6>
+            <button class="single btn btn-warning" type="button" name="button">
               <div class="custom-control custom-radio custom-control-inline">
                 <input type="radio" id="customRadioInline3" name="customRadioInline4" class="custom-control-input">
-                <label class="custom-control-label" for="customRadioInline3">Single Cost</label>
+                <label class="custom-control-label" for="customRadioInline3">Single Cost 🎟️</label>
               </div>
             </button>
             <button class="multiple btn btn-success" type="button" name="button">
               <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio"  id="customRadioInline4" name="customRadioInline4" class="custom-control-input">
-                <label class="custom-control-label" for="customRadioInline4">Multiple Cost</label>
+                <input type="radio" id="customRadioInline4" name="customRadioInline4" class="custom-control-input">
+                <label class="custom-control-label" for="customRadioInline4">Multiple Cost 🎫🎫</label>
               </div>
             </button>
 
@@ -403,14 +428,21 @@
           <div class="modal-body modal2">
             <div class="card ">
               <div class="card body space">
-                <h4 class="h4">Price of Ticket</h3>
-                <div class="input-group flex-nowrap">
+                <h2>Price of Ticket</h2>
+                <div class="form-group">
                   <div class="input-group-prepend">
                     <span class="input-group-text" id="addon-wrapping">₹</span>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>100</option>
+                      <option>200</option>
+                      <option>300</option>
+                      <option>400</option>
+                      <option>500</option>
+                    </select>
                   </div>
-                  <input type="text" class="test2 form-control" placeholder="Price per ticket" aria-label="Username" aria-describedby="addon-wrapping">
+
                 </div>
-                <h4 class="h4">Availability</h4>
+                <h2>Availability</h2>
                 <button class=" btn btn-outline-info " type="button" name="button">
                   <div class="custom-control custom-radio custom-control-inline">
                     <input type="radio" id="customRadioInline6" name="customRadioInline5" class="custom-control-input">
@@ -429,8 +461,8 @@
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="  btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter2" data-dismiss="modal">Next</button>
+
+            <button type="button" class="  btn btn-outline-success" data-toggle="modal" data-target="#exampleModalCenter2" data-dismiss="modal">Done 👌</button>
           </div>
         </div>
       </div>
@@ -440,14 +472,14 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleModalCenter1" name="button" data-dismiss="modal"><i class="fas fa-long-arrow-alt-left"></i></button>
-            <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+            <h5 class="modal-title" id="exampleModalCenterTitle">Multiple Tickets</h5>
             <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button> -->
-            <button type="button" class="btn btn-outline-primary add" name="button">Add</button>
+            <button type="button" class="btn btn-outline-primary add" name="button">✚ Add</button>
           </div>
           <div class="modal-body ">
-            <ul class="price list-group">
+            <ul class=" list-group">
 
             </ul>
             <div class="card cardp">
@@ -461,11 +493,15 @@
                   <input type="text" class="test1 form-control" placeholder="parking/food etc.." aria-label="Username" aria-describedby="addon-wrapping">
                 </div>
                 <h2>Description</h2>
-                <div class="input-group flex-nowrap">
+                <!-- <div class="input-group flex-nowrap">
                   <div class="input-group-prepend">
-                    <!-- <span class="input-group-text" id="addon-wrapping">@</span> -->
+
                   </div>
                   <input type="text" class="test3 form-control" placeholder="Description" aria-label="Username" aria-describedby="addon-wrapping">
+                </div> -->
+                <div class="form-group">
+
+                  <textarea class="test3 form-control" id="exampleFormControlTextarea1" placeholder="Description" rows="3"></textarea>
                 </div>
                 <h2>Price</h2>
                 <div class="input-group flex-nowrap">
@@ -483,8 +519,10 @@
 
             </div>
             <div class="modal-footer">
+              <h6 class="tprices"></h6>
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="submit done btn btn-outline-success" dat-toggle="button">Done 👍</button>
+              <button type="button" class=" done btn btn-outline-success">Done 👍</button>
+              <!-- <button type="button" class=" submit btn btn-outline-success" data-dismiss="modal" >Submit ✌</button> -->
 
             </div>
           </div>
@@ -495,8 +533,6 @@
 
   </section>
 
-
-
   <footer class="white-section" id="footer">
     <div class="container-fluid">
       <i class="social-icon fab fa-facebook-f"></i>
@@ -506,8 +542,10 @@
       <p>© Copyright 2018 Figma</p>
     </div>
   </footer>
+
   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
   <script src="index.js" charset="utf-8"></script>
+
 </body>
 
 </html>
