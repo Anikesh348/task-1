@@ -20,6 +20,7 @@ $(".multiple").click(function() {
 });
 var i = 0;
 var c = 0;
+var t = 0;
 var tprice = 0;
 $(".remove").click(function() {
   $(".cardp").css("visibility", "collapse");
@@ -27,15 +28,18 @@ $(".remove").click(function() {
 $(".add").click(function() {
   $(".cardp").css("visibility", "visible");
   $(".done").html("Done 👍");
-  $(".done").css("visiblity", "visible");
-  $(".submit").css("visiblity", "collapse");
+  $(".done").removeAttr("data-dismiss", "modal");
+  t=0;
+  
 });
 $(".done").click(function() {
+  t++;
   var category = $(".test1").val();
   var price = $(".test2").val();
   if (price != " " && category != " ") {
     i++;
     c++;
+
   }
   $(".tprices").text(" ");
   tprice += Number(price);
@@ -48,5 +52,12 @@ $(".done").click(function() {
     $(".cardp").css("visibility", "collapse");
     c = 0;
     $(".tprices").text("Total Cost:" + tprice);
+    $(".done").text("Submit ✌");
   }
+  if (t == 2 ) {
+    $(".done").attr("data-dismiss", "modal");
+    t = 0;
+  }
+
+
 });
