@@ -42,15 +42,15 @@ $(".done").click(function() {
   t++;
   var category = $(".test1").val();
   var price = $(".test2").val();
-  if (price != " " && category != " ") {
+  if (price != "" && category != "") {
     i++;
     c++;
 
   }
-  $(".test1").val(" ");
-  $(".test2").val(" ");
-  $(".test3").val(" ");
-  $(".tprices").text(" ");
+  $(".test1").val("");
+  $(".test2").val("");
+  $(".test3").val("");
+  $(".tprices").text("");
   tprice += Number(price);
 
   if (c != 0) {
@@ -58,12 +58,12 @@ $(".done").click(function() {
     $(".li").addClass("list-group-item");
     $(".cardp").css("visibility", "collapse");
     c = 0;
-    $(".tprices").text("Total Cost:" + tprice);
+    $(".tprices").text("Total Cost: ₹" + tprice);
     $(".done").text("Submit ✌");
 
   }
   else
-  {
+  { console.log(t);
     if(t==1)
     {swal("Error", "Please fill the form first!!", "error");
       t=0;
