@@ -1,3 +1,4 @@
+
 h3 {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
@@ -412,6 +413,7 @@ p {
 .stylish {
   font-family: 'Indie Flower', cursive;
 }
-/* .submit{
+.active1,.active2{
   visibility: collapse;
-} */
+
+}
